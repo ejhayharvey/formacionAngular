@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "nom": "sean-wotherspoon",
+      "title": "Sean Wotherspoon",
+      "foto": "./assets/sw.jpg",
+      "imgDescription": "Nike AirMax 1 Sean-Wotherspoon",
+      "description": "Last year, Nike invited 12 creatives to design the future of Nike Air. These “Revolutionairs,” as they were called, came up with incredible footwear designs, and the public voted on which shoe would be released for Air Max Day 2018. The winner, Sean Wotherspoon, combined an Air Max 97 upper with an Air Max 1 outsole and midsole. The multicolor, corduroy upper was inspired by vintage Nike hats, as well as a brainstorm with close friends and confidants. The colors were also inspired by vintage Nike sneakers and windbreakers from the ‘80s and ‘90s, notes Wotherspoon. A smiley face from a vintage “Have a Nike Day” T-shirt made it onto the shoe’s insoles, in addition to a wave patch on the left tongue. “When you put your shoes on, the first thing you want to see is a face smiling back at you, right?,” says Wotherspoon."
+    },
+    {
+      "nom": "city-lights",
+      "title": "Urban Photography",
+      "foto": "./assets/city.jpg",
+      "imgDescription": "City lights views",
+      "description": "Urban photography is an interdisciplinary field of visual practice concerned with the evocation and representation of urban spaces and the lives of those living, working and moving through such spaces. It takes many forms including architectural, landscape, portrait, street, object, performance, documentary, archaeological, design and fine-art photography; all attesting to the rich diversity of practices constituting an ongoing conversation about the nature of contemporary and historic visualisations of city spaces. As a field of intersecting practices, it is closely related to urban research and reflects many of the themes explored by sociologists, cultural theorists, artists, anthropologists, geographers, historians and writers concerned with the story of the city."
+    },
+    {
+      "nom": "travis-scott",
+      "title": "Travis Scott - Astroworld",
+      "foto": "./assets/travis.jpg",
+      "imgDescription": "Astroworld tour abum",
+      "description": "Astroworld is the third studio album by American rapper and record producer Travis Scott. It was released on August 3, 2018, through Cactus Jack Records and Grand Hustle Records, and distributed by Epic Records. The album follows his second studio album Birds in the Trap Sing McKnight (2016), and his collaborative album Huncho Jack, Jack Huncho (2017) with Quavo. Astroworld is a hip hop album, incorporating elements of trap and psychedelic music. Stargazing has been described as a psychedelic trap song, while Coffee Bean is said to inhabit old school hip hop territory with a blissed-out funk guitar. The song Skeletons has been labelled as kaleidoscope-pop by Pitchfork that draws lyrical influences from Kanye West."
+    }
+  ]
+}

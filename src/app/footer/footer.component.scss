@@ -1,0 +1,176 @@
+@import "../../styles.scss";
+
+//All Footer
+.footer-content {
+  background-color: #555555; /* Red */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.7rem;
+  color: whitesmoke;
+  //text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 40px 10px 0px 25px;
+  height: max-content;
+  max-width: 100%;
+  //background-color: #f09a9d; /* Red */
+
+  @include breakpoint(tablet) {
+    background-color: #555555;
+    font-size: 0.9rem;
+    display: flex;
+    flex-flow: row wrap;
+    height: max-content;
+  }
+
+  @include breakpoint(desktop) {
+    background-color: #555555;
+    height: max-content;
+    padding: 50px 15px 25px 60px;
+  }
+}
+
+// Footer title
+.footer-title {
+  flex-basis: 70%;
+  order: 1;
+  margin: 0 20px 0 0;
+
+  @include breakpoint(tablet) {
+    flex-basis: 30%;
+    margin: 0 120px 0 0;
+    order: 1;
+  }
+
+  @include breakpoint(desktop) {
+    flex-basis: 30%;
+    order: 1;
+    margin: 0 170px 0 0;
+    font-size: 1.5rem;
+  }
+}
+
+// More Information
+.footer-helper {
+  flex-basis: 75%;
+  order: 3;
+
+  @include breakpoint(tablet) {
+    order: 2;
+    flex-basis: 33.3%;
+    margin: 0 50px 0 0;
+  }
+
+  @include breakpoint(desktop) {
+    order: 2;
+    //width: 33.3%;
+    max-width: 20%;
+    margin: 0 150px 0 0;
+  }
+}
+
+.footer-moreInfo {
+  h2 {
+    @include breakpoint(tablet) {
+      font-size: 1rem;
+    }
+
+    @include breakpoint(desktop) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+p {
+  margin: 0;
+  padding: 20px 0px;
+  font-size: 1.05rem;
+  a {
+    color: whitesmoke;
+  }
+}
+
+.footer-visit {
+  margin: 5% 0 5% 0;
+
+  a {
+    color: whitesmoke;
+  }
+}
+
+// Images
+.footer-img {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  order: 2;
+
+  @include breakpoint(tablet) {
+    order: 3;
+  }
+
+  @include breakpoint(desktop) {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.imgHb {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 10px;
+
+  @include breakpoint(desktop) {
+    height: 80px;
+    width: 80px;
+
+    margin-right: 50px;
+  }
+}
+
+.imgHn {
+  height: 60px;
+  width: 60px;
+
+  @include breakpoint(desktop) {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+//Links
+.footer-links {
+  order: 4;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 0;
+
+  @include breakpoint(tablet) {
+    flex-basis: 70%;
+    flex-direction: row;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    flex: 0 0 35%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    font-size: 1.05rem;
+    line-height: 2rem;
+
+    @include breakpoint(tablet) {
+      display: flex;
+      flex-flow: row wrap;
+      max-width: fit-content;
+      margin-right: 25px;
+    }
+
+    @include breakpoint(desktop) {
+      display: flex;
+      flex-flow: row wrap;
+      max-width: fit-content;
+      margin-right: 25px;
+    }
+  }
+}

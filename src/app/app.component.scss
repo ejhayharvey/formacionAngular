@@ -1,0 +1,73 @@
+@import "../styles.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  //background-color: black;
+  color: whitesmoke;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  padding: 15px 0 0 20px;
+  width: 100%;
+
+  @include breakpoint(tablet) {
+    font-size: 30px;
+    padding: 5px 0 0 45px;
+  }
+}
+
+.wrapper-container {
+  padding: 0;
+
+  //max-width: 1440px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+span {
+  color: rgb(184, 197, 255);
+  font-size: 0.8rem;
+  float: right;
+  margin: 16px 25px 0 0;
+
+  @include breakpoint(tablet) {
+    font-size: 1rem;
+    padding: 14px 150px;
+    margin: 0 0 0 0;
+  }
+}
+
+li {
+  float: right;
+  background-color: rgb(29, 29, 29);
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+
+  @include breakpoint(tablet) {
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+}
+
+li a:hover {
+  background-color: #111;
+}
