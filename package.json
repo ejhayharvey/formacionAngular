@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node ./api/api.js",
+    "start": "node api.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
