@@ -7,11 +7,11 @@ const app = express();
 app.use(cors())
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/ProjectAngular'));
+app.use(express.static('/dist/ProjectAngular'));
 
 app.get('/*', function(req,res) {ProjectAngular
 
-res.sendFile(path.join(__dirname+'/dist/index.html'));
+res.sendFile(path.join('/dist/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
