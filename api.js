@@ -7,10 +7,10 @@ const app = express();
 app.use(cors())
 
 // Serve only the static files form the root directory
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/dist/ProjectAngular/index.html'));
 
 app.get('/*', function(req,res) {ProjectAngular
-  res.sendFile(path.join('/dist/ProjectAngular/index.html'));
+  res.sendFile(path.join(__dirname + '/src/index.html'));
 });
 
 console.log(__dirname, 'dirname');
