@@ -9,7 +9,7 @@ import { AppEvent } from "./models";
   providedIn: "root"
 })
 export class InfoService {
-  private infoUrl = "http://www.mocky.io/v2/5e173676300000b37dd56466";
+  private infoUrl = "https://www.mocky.io/v2/5e173676300000b37dd56466";
 
   constructor(private http: HttpClient) {}
 
