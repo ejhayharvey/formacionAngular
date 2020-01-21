@@ -7,13 +7,15 @@ const app = express();
 app.use(cors())
 
 // Serve only the static files form the root directory
-app.use(express.static('./dist/ProjectAngular'));
+// in case the build folder is located in the root.
+app.use(express.static(__dirname + '/dist/ProjectAngular'));
 
-app.get('/*', function(req,res) {ProjectAngular
-  res.sendFile(path.join('./dist/ProjectAngular/index.html'));
+app.get('/*', function(req,res) {
+  res.sendFile(__dirname + '/dist/ProjectAngular/index.html');
+  console.log('entramos...');
+  
 });
 
-console.log(__dirname, 'dirname');
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
 
@@ -24,13 +26,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-});
-
 app.post('/register', (req, res)=> {
-  console.log(req, 'req');
-  console.log(req.body, 'body');
+
   const body = req.body;
   if(body.name === 'Josep'){
     res.status(404)
@@ -39,8 +36,3 @@ app.post('/register', (req, res)=> {
     res.send({"p":"SUCCESSFULLY REGISTERED!"});
   }
 })
-
-app.listen(8000, () => {
-  console.log('server listening on port 8000!')
-});
-

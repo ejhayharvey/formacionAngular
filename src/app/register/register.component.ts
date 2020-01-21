@@ -49,16 +49,16 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.fb.group(
       {
         name: [this.registerFormValue.name, Validators.required],
-        email: ["", [Validators.required, Validators.email]],
-        password: ["", [Validators.required, Validators.minLength(6)]],
-        confirmPassword: ["", Validators.required]
+        email: [this.registerFormValue.email, [Validators.required, Validators.email]],
+        password: [this.registerFormValue.password, [Validators.required, Validators.minLength(6)]],
+        confirmPassword: [this.registerFormValue.confirmPassword, Validators.required]
       },
       {
         validator: MustMatch("password", "confirmPassword")
       }
     );
 
-    this.registerForm.valueChanges.pipe(debounceTime(100)).subscribe(value => {
+    this.registerForm.valueChanges.pipe(debounceTime(500)).subscribe(value => {
       console.log("We could autosave!", value);
       this.memoryForm = value;
     });
