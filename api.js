@@ -10,10 +10,10 @@ app.use(cors())
 app.use(express.static(__dirname));
 
 app.get('/*', function(req,res) {ProjectAngular
-
-res.sendFile(path.join(__dirname + '../index.html'));
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
+console.log(__dirname, 'dirname');
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
 
