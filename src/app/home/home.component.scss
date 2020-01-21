@@ -58,6 +58,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 
   @include breakpoint(tablet) {
     width: 80%;
