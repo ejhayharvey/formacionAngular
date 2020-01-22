@@ -1,20 +1,14 @@
-import { Component, OnInit, OnDestroy  } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Component, OnInit } from "@angular/core";
+import { Subscription } from "rxjs";
 
-import { RegisterFormService } from './register-form.service';
-import { ActivatedRoute } from '@angular/router';
-
-//import { cards, Icard } from './cards';
+import { RegisterFormService } from "./register-form.service";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
-
 export class AppComponent implements OnInit {
-
-  //suscribirme al subject
   name: string;
   subscription: Subscription;
 
@@ -22,25 +16,11 @@ export class AppComponent implements OnInit {
     this.subscription = this.registerService.getInfo().subscribe(data => {
       if (data) {
         this.name = data;
-        //console.log(data, 'DATA APP');
-
       } else {
-        this.name = '';
+        this.name = "";
       }
-      //console.log(data, 'MESSAGES');
     });
   }
 
-  ngOnInit(){
-
-  }
+  ngOnInit() {}
 }
-
-
-  /*showInfoDetail(par) {
-    this.infoService.getDetail(par).subscribe((data: any) => {
-      this.details = data;
-      console.log(this.details, 'details');
-    });
-  }*/
-

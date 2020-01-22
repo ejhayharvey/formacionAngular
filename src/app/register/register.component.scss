@@ -1,5 +1,6 @@
 @import "../../styles.scss";
 
+// All Register Form
 .register-container {
   background-color: black;
   color: whitesmoke;
@@ -13,6 +14,7 @@
   width: 100%;
 }
 
+// Title Form
 h3 {
   font-size: 2rem;
   text-align: center;
@@ -21,6 +23,7 @@ h3 {
   padding: 15px 0 15px 0;
 }
 
+// Every item
 .name-container,
 .email-container,
 .password-container,
@@ -39,6 +42,7 @@ h3 {
   }
 }
 
+// Inputs
 input[type="text"],
 [type="password"] {
   width: 100%;
@@ -51,6 +55,7 @@ input[type="text"],
   text-align: left;
 }
 
+// button
 .button-register {
   background-color: #4caf50;
   color: whitesmokes;
@@ -75,13 +80,14 @@ input[type="text"],
   background-color: #45a049;
 }
 
+// if success message
 .success {
   background-color: rgb(137, 252, 141);
   color: black;
   width: 59%;
   padding: 2px 20px;
   margin: 8px 0;
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-align: center;
   border: none;
   border-radius: 4px;
@@ -97,13 +103,14 @@ input[type="text"],
   }
 }
 
+// if error message
 .errorMsg {
   background-color: rgb(255, 130, 130);
   color: black;
   width: 59%;
   padding: 2px 20px;
   margin: 8px 0;
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-align: center;
   border: none;
   border-radius: 4px;
@@ -119,6 +126,7 @@ input[type="text"],
   }
 }
 
+// error message requiered, invalid or not match
 .name-required,
 .email-required,
 .email-invalid,

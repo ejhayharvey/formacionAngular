@@ -1,8 +1,8 @@
 <div class="container">
-  <div class="item" *ngFor = "let info of cardsInFather">
+  <div class="item" *ngFor="let info of cardsInFather">
     <h2>{{info.title}}</h2>
     <div class="img-container">
-      <img [src]="info.foto" [routerLink]="['/events/', info.nom]"/>
+      <img [src]="info.foto" [routerLink]="['/events/', info.nom]" />
     </div>
     <p>{{info.description}}</p>
   </div>

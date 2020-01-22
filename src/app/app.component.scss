@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
+// Title 'Ejhay's App'
 h1 {
-  //background-color: black;
   color: whitesmoke;
   text-align: left;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -23,10 +23,9 @@ h1 {
 
 .wrapper-container {
   padding: 0;
-
-  //max-width: 1440px;
 }
 
+// List
 ul {
   list-style-type: none;
   margin: 0;
@@ -36,6 +35,7 @@ ul {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+// user name
 span {
   color: rgb(184, 197, 255);
   font-size: 0.8rem;
