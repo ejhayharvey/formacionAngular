@@ -2,17 +2,15 @@
 
 //All Footer
 .footer-content {
-  background-color: #555555; /* Red */
+  background-color: #555555;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 0.7rem;
   color: whitesmoke;
-  //text-align: center;
   display: flex;
   flex-flow: row wrap;
   padding: 40px 10px 0px 25px;
   height: max-content;
   max-width: 100%;
-  //background-color: #f09a9d; /* Red */
 
   @include breakpoint(tablet) {
     background-color: #555555;

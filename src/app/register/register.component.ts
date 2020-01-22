@@ -7,14 +7,6 @@ import {
 } from "@angular/forms";
 import { Observable } from "rxjs";
 import { RegisterFormService } from "../register-form.service";
-import {
-  HttpClient,
-  HttpRequest,
-  HttpHandler,
-  HttpErrorResponse,
-  HttpEvent
-} from "@angular/common/http";
-import { Router } from "@angular/router";
 
 import { MustMatch } from "../must-match.validator";
 import { debounceTime } from "rxjs/operators";
@@ -26,11 +18,7 @@ import { MemoryForm } from "../models";
   styleUrls: ["./register.component.scss"]
 })
 export class RegisterComponent implements OnInit {
-  /*
-  injectar service form
 
-  utilizar el subject para mandar info a través de el a todos sus suscriptores
-  */
   currentFormValue: Observable<any>;
   registerForm: FormGroup;
   submitted = false;
@@ -49,9 +37,18 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.fb.group(
       {
         name: [this.registerFormValue.name, Validators.required],
-        email: [this.registerFormValue.email, [Validators.required, Validators.email]],
-        password: [this.registerFormValue.password, [Validators.required, Validators.minLength(6)]],
-        confirmPassword: [this.registerFormValue.confirmPassword, Validators.required]
+        email: [
+          this.registerFormValue.email,
+          [Validators.required, Validators.email]
+        ],
+        password: [
+          this.registerFormValue.password,
+          [Validators.required, Validators.minLength(6)]
+        ],
+        confirmPassword: [
+          this.registerFormValue.confirmPassword,
+          Validators.required
+        ]
       },
       {
         validator: MustMatch("password", "confirmPassword")

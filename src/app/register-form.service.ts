@@ -11,7 +11,7 @@ export class RegisterFormService {
 
   memory = { name: "", email: "", password: "", confirmPassword: "" };
 
-  private urlApi = "http://localhost:8000";
+  private urlApi = "http://localhost:8080";
 
   constructor(private http: HttpClient) {}
 
